@@ -1,3 +1,5 @@
+/*# sourceMappingURL=sail.af50df17141f4d36caad.css.map*/
+
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
@@ -5,15 +7,18 @@
  */
 
 /* You can override the default Infima variables here. */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Roboto:wght@100;300;400&display=swap');
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --qi-docs-standard-font-family: 'Roboto', sans-serif;
+  --ifm-color-primary: #9b0a69;
+  --ifm-color-primary-dark: #b70d7c;
+  --ifm-color-primary-darker: #c40e85;
+  --ifm-color-primary-darkest: #d00e8d;
+  --ifm-color-primary-light: #d0409e;
+  --ifm-color-primary-lighter: #ce2995;
+  --ifm-color-primary-lightest: #9b0a69;
   --ifm-code-font-size: 95%;
+  --ifm-navbar-background-color: rgb( 247,250,252 );
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
@@ -28,3 +33,248 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%
+}
+
+body {
+  margin: 0
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block
+}
+
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0
+}
+
+[hidden], template {
+  display: none
+}
+
+a {
+  background-color: transparent
+}
+
+a:active, a:hover {
+  outline: 0
+}
+
+abbr[title] {
+  border-bottom: 1px dotted
+}
+
+b, strong {
+  font-weight: bold
+}
+
+dfn {
+  font-style: italic
+}
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0
+}
+
+mark {
+  background: #ff0;
+  color: #000
+}
+
+small {
+  font-size: 80%
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline
+}
+
+sup {
+  top: -0.5em
+}
+
+sub {
+  bottom: -0.25em
+}
+
+img {
+  border: 0
+}
+
+svg:not(:root) {
+  overflow: hidden
+}
+
+figure {
+  margin: 1em 40px
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0
+}
+
+pre {
+  overflow: auto
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em
+}
+
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0
+}
+
+button {
+  overflow: visible
+}
+
+button, select {
+  text-transform: none
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer
+}
+
+button[disabled], html input[disabled] {
+  cursor: default
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0
+}
+
+input {
+  line-height: normal
+}
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  height: auto
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none
+}
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em
+}
+
+legend {
+  border: 0;
+  padding: 0
+}
+
+textarea {
+  overflow: auto
+}
+
+optgroup {
+  font-weight: bold
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+td, th {
+  padding: 0
+}
+
+* {
+  box-sizing: border-box;
+  word-wrap: break-word
+}
+
+body, html {
+  color: var(--sail-color-text);
+  font-weight: 400;
+  font-size: 14px;
+  font-family: var(--qi-docs-standard-font-family)
+}
+
+code, kbd, pre, samp {
+  font-size: 13px;
+  font-family: var(--sail-font-family-monospace)
+}
+
+code {
+  color: inherit
+}
+
+code:lang(ja-JP), kbd:lang(ja-JP), pre:lang(ja-JP), samp:lang(ja-JP) {
+  font-family: var(--sail-font-family-monospace-ja-JP)
+}
+
+code:lang(zh-Hans), kbd:lang(zh-Hans), pre:lang(zh-Hans), samp:lang(zh-Hans) {
+  font-family: var(--sail-font-family-monospace-zh-Hans)
+}
+
+body, button, html, input {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+body:lang(ja-JP), html:lang(ja-JP) {
+  font-family: var(--sail-font-family-ja-JP)
+}
+
+body:lang(zh-Hans), html:lang(zh-Hans) {
+  font-family: var(--sail-font-family-zh-Hans)
+}
+
+a {
+  color: var(--sail-color-blue-500);
+  font-weight: 500;
+  text-decoration: none
+}
+
+a:hover {
+  color: var(--sail-color-gray-900);
+  text-decoration: none
+}
+
+b, strong {
+  font-weight: 500
+}
+
+em, i {
+  font-style: italic
+}
+
+
+
