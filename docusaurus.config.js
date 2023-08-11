@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
     title: 'Qi Digital - Docs',
     tagline: 'Dinosaurs are cool',
-    favicon: 'img/favicon.ico',
+    favicon: 'https://qi-web-assets.nyc3.cdn.digitaloceanspaces.com/qi_ico_obd_icon.ico',
 
     // Set the production url of your site here
     url: 'https://qidigital.github.io',
@@ -115,14 +115,14 @@ const config = {
                 items: [
                     {
                         to: '/docs-invoicing/Intro',    // ./docs-api/Intro.md
-                        label: 'Invoicing',
-                        position: 'left',
+                        label: 'INVOICING',
+                        position: 'right',
                         activeBaseRegex: `/docs-api/`,
                     },
                     {
                         to: '/docs-bolt/Intro',    // ./docs-api/Intro.md
-                        label: 'Bolt',
-                        position: 'left',
+                        label: 'BOLT',
+                        position: 'right',
                         activeBaseRegex: `/docs-api/`,
                     }
                 ],
@@ -132,7 +132,7 @@ const config = {
                 copyright: `Copyright © ${new Date().getFullYear()} Qi Digital, Inc. <br/>Built with Docusaurus.`,
             },
             prism: {
-                theme: lightCodeTheme,
+                theme: require('prism-react-renderer/themes/dracula'),
                 darkTheme: darkCodeTheme,
             },
         }),

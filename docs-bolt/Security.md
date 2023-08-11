@@ -1,8 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 3
 ---
 
-# Overview
+# Security of your transactions
 
 ## What is Bolt
 Bolt is an enterprise-ready platform that allows you to build, deploy and scale payment applications on the lightning network

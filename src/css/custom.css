@@ -22,18 +22,25 @@ Have any questions? Get in tough with our team.
 */
 
 /* You can override the default Infima variables here. */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Roboto:wght@100;300;400&family=Source+Sans+3:wght@300;400;600&display=swap');
+
+
 :root {
-  --qi-docs-standard-font-family: 'Roboto', sans-serif;
-  --ifm-color-primary: #9b0a69;
+  --qi-docs-standard-font-family: 'Source Sans 3', sans-serif;
+  --qi-docs-standard-text-color: rgb(60, 66, 87);
+  --qi-docs-standard-text-link-color: #e10b98;
+  --qi-docs-standard-bg-color: rgb( 247,250,252 );
+  --qi-docs-standard-hover-color: rgb(247, 247, 250);
+  --ifm-color-primary: var(--qi-docs-standard-text-color);
   --ifm-color-primary-dark: #b70d7c;
   --ifm-color-primary-darker: #c40e85;
   --ifm-color-primary-darkest: #d00e8d;
   --ifm-color-primary-light: #d0409e;
   --ifm-color-primary-lighter: #ce2995;
-  --ifm-color-primary-lightest: #9b0a69;
+  --ifm-color-primary-lightest: #d362ac;
   --ifm-code-font-size: 95%;
-  --ifm-navbar-background-color: rgb( 247,250,252 );
+  --ifm-navbar-background-color: var(--qi-docs-standard-bg-color);
+  --ifm-navbar-height: 70px;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
@@ -48,6 +55,21 @@ Have any questions? Get in tough with our team.
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* sidebar */
+:root {
+  --ifm-menu-color-background-active: var(--qi-docs-standard-bg-color);
+  --ifm-menu-color-background-hover: var(--qi-docs-standard-hover-color);
+}
+
+.menu__link {
+  font-size: medium;
+}
+
+.theme-doc-sidebar-menu li:not(:last-child) {
+  margin-bottom: 3px;
+}
+
 
 html {
   font-family: sans-serif;
@@ -78,11 +100,27 @@ audio:not([controls]) {
 }
 
 a {
-  background-color: transparent
+  background-color: transparent;
 }
 
 a:active, a:hover {
-  outline: 0
+  outline: 0;
+  background: transparent;
+}
+.menu__link menu__link--active {
+  background: black !important;
+}
+
+p {
+  color: var(--qi-docs-standard-text-color);
+}
+p
+a {
+  color: var(--qi-docs-standard-text-link-color);
+}
+
+p a:hover {
+  filter: brightness(0.85);
 }
 
 abbr[title] {
@@ -289,6 +327,13 @@ b, strong {
 
 em, i {
   font-style: italic
+}
+
+/* navbar */
+.navbar__inner {
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
 }
 
 
