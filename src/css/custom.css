@@ -70,6 +70,12 @@ Have any questions? Get in tough with our team.
   margin-bottom: 3px;
 }
 
+/* docItemCol */
+[class^="docItemContainer"] {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 
 html {
   font-family: sans-serif;
@@ -114,13 +120,18 @@ a:active, a:hover {
 p {
   color: var(--qi-docs-standard-text-color);
 }
-p
-a {
+
+p a {
   color: var(--qi-docs-standard-text-link-color);
 }
 
 p a:hover {
   filter: brightness(0.85);
+}
+
+.theme-doc-markdown p {
+  font-size: medium;
+  font-weight: normal;
 }
 
 abbr[title] {
