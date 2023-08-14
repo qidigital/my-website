@@ -22,13 +22,18 @@ Have any questions? Get in tough with our team.
 */
 
 /* You can override the default Infima variables here. */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Roboto:wght@100;300;400&family=Source+Sans+3:wght@300;400;600&display=swap');
 
+@layer components {
+  .custom-footer {
+    border-top: 2px #e0e5ee solid;
+  }
+}
 
 :root {
-  --qi-docs-standard-font-family: 'Source Sans 3', sans-serif;
-  --qi-docs-standard-text-color: rgb(60, 66, 87);
-  --qi-docs-standard-text-link-color: #e10b98;
+  --qi-docs-custom-font-source-sans: 'Source Sans 3', sans-serif;
+  --qi-docs-custom-font-cormorant-garamond: 'Cormorant Garamond', serif;
+  --qi-docs-standard-text-color: #8792A2;
+  --qi-docs-standard-text-link-color: #566bd4;
   --qi-docs-standard-bg-color: rgb( 247,250,252 );
   --qi-docs-standard-hover-color: rgb(247, 247, 250);
   --ifm-color-primary: var(--qi-docs-standard-text-color);
@@ -64,6 +69,28 @@ Have any questions? Get in tough with our team.
 
 .menu__link {
   font-size: medium;
+}
+
+/* font family */
+.font-cormorant-garamond {
+  font-family: var(--qi-docs-custom-font-cormorant-garamond);
+}
+
+/* nav bar */
+.navbar__link {
+  color: #2c2f3b;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+.navbar__link:hover {
+  color: #393c48;
+}
+
+.font-source-sans {
+  font-family: var(--qi-docs-custom-font-source-sans);
 }
 
 .theme-doc-sidebar-menu li:not(:last-child) {
@@ -288,7 +315,7 @@ body, html {
   color: var(--sail-color-text);
   font-weight: 400;
   font-size: 14px;
-  font-family: var(--qi-docs-standard-font-family)
+  font-family: var(--qi-docs-custom-font-source-sans)
 }
 
 code, kbd, pre, samp {
@@ -346,6 +373,7 @@ em, i {
   max-width: 1480px;
   margin: 0 auto;
 }
+
 
 
 

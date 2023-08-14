@@ -61,6 +61,11 @@ const config = {
         ],
     ],
 
+    stylesheets: [
+        {
+            href: 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Source+Sans+3:wght@300;400;600&display=swap',
+        },
+    ],
     plugins: [
         [
             '@docusaurus/plugin-content-docs',
@@ -115,20 +120,26 @@ const config = {
                 items: [
                     {
                         to: '/docs-invoicing/Intro',    // ./docs-api/Intro.md
-                        label: 'INVOICING',
+                        label: 'CRYPTO PAYMENTS',
                         position: 'right',
                         activeBaseRegex: `/docs-api/`,
                     },
                     {
                         to: '/docs-bolt/Intro',    // ./docs-api/Intro.md
-                        label: 'BOLT',
+                        label: 'HOSTED CRYPTO GATEWAY',
+                        position: 'right',
+                        activeBaseRegex: `/docs-api/`,
+                    },
+                    {
+                        to: '/docs-bolt/Intro',    // ./docs-api/Intro.md
+                        label: 'LIGHTNING AS A SERVICE',
                         position: 'right',
                         activeBaseRegex: `/docs-api/`,
                     }
                 ],
             },
             footer: {
-                style: 'dark',
+                style: 'light',
                 copyright: `Copyright © ${new Date().getFullYear()} Qi Digital, Inc. <br/>Built with Docusaurus.`,
             },
             prism: {
