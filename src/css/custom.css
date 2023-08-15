@@ -397,6 +397,11 @@ em, i {
     font-style: italic
 }
 
+.custom-site-wrapper > a {
+    font-size: 0.875rem;
+    color: var(--qi-docs-standard-text-link-color) !important;
+}
+
 .navbar__inner, .custom-site-wrapper {
     width: 100%;
     max-width: 1480px;
@@ -426,6 +431,10 @@ em, i {
     .navbar__inner, .custom-site-wrapper {
         padding-left: 3rem;
         padding-right: 3rem;
+    }
+
+    .custom-site-wrapper > a {
+        font-size: 1rem;
     }
 }
 

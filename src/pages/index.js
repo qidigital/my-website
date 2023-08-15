@@ -96,7 +96,7 @@ const HomePageLinkBox = ({links, colName, heading}) => {
     const renderedLinks = links.map((link, index) => {
         return (
             <li key={`colName_${index}`} >
-                <Link className={`text-[#566bd4] text-base md:text-medium`} to={link.link}>{link.name}</Link>
+                <Link className={`text-[#566bd4] text-sm md:text-xl`} to={link.link}>{link.name}</Link>
             </li>
         );
     });
@@ -106,7 +106,7 @@ const HomePageLinkBox = ({links, colName, heading}) => {
             <p className={`custom-site-2nd-header`}>
                 {heading}
             </p>
-            <ul className={`text-lg mt-5 px-0 space-y-4 md:space-y-3 font-semibold list-none `}>
+            <ul className={`text-lg mt-5 px-0 space-y-3 font-semibold list-none `}>
                 {renderedLinks}
             </ul>
         </div>
