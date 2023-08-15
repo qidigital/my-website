@@ -81,7 +81,7 @@ const HomePageHero = () => {
                         <p className={`text-3xl font-n max-w-[500px] pb-6`}>Find examples, integration guides and other
                             ways of working with Qi.</p>
                         <div className={`text-black font-bold text--italic font-cormorant-garamond text-2xl`}>
-                             <ArrowButton linkText={`explore docs`} link={`#`}/>
+                             <ArrowButton textClass={`text-black text-2xl`} linkText={`explore docs`} link={`#`}/>
                         </div>
                     </div>
                 </div>
