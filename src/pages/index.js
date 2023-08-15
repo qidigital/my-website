@@ -74,7 +74,7 @@ const links = [
 const HomePageHero = () => {
     return (
         <div className={`w-full`}>
-            <div className="custom-site-wrapper h-[330px] md:h-[400px]">
+            <div className="custom-site-wrapper min-h-[330px] pb-6 md:h-[400px]">
                 <div className={`flex items-center justify-center`}>
                     <div className={`w-full pt-10`}>
                         <h1 className={`text-6xl font-medium font-cormorant-garamond`}>Documentation</h1>
@@ -102,11 +102,11 @@ const HomePageLinkBox = ({links, colName, heading}) => {
     });
 
     return (
-        <div className={`md:max-w-[350px] w-full`}>
+        <div className={`md:max-w-[350px] w-full pb-6 lg:pb-0`}>
             <p className={`custom-site-2nd-header`}>
                 {heading}
             </p>
-            <ul className={`text-lg mt-5 px-0 space-y-3 font-semibold text-[#566bd4] list-none`}>
+            <ul className={`text-lg mt-5 px-0 space-y-4 md:space-y-3 font-semibold text-[#566bd4] list-none `}>
                 {renderedLinks}
             </ul>
         </div>
