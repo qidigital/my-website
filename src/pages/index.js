@@ -73,8 +73,8 @@ const links = [
 ]
 const HomePageHero = () => {
     return (
-        <div className={`w-full`}>
-            <div className="custom-site-wrapper min-h-[330px] pb-6 md:h-[400px]">
+        <div className={`w-full py-6`}>
+            <div className="custom-site-wrapper min-h-[350px] md:min-h-[330px] md:h-[400px]">
                 <div className={`flex items-center justify-center`}>
                     <div className={`w-full pt-10`}>
                         <h1 className={`text-6xl font-medium font-cormorant-garamond`}>Documentation</h1>
@@ -95,8 +95,8 @@ const HomePageLinkBox = ({links, colName, heading}) => {
 
     const renderedLinks = links.map((link, index) => {
         return (
-            <li key={`colName_${index}`}>
-                <Link to={link.link}>{link.name}</Link>
+            <li key={`colName_${index}`} >
+                <Link className={`text-[#566bd4] text-base md:text-medium`} to={link.link}>{link.name}</Link>
             </li>
         );
     });
@@ -106,7 +106,7 @@ const HomePageLinkBox = ({links, colName, heading}) => {
             <p className={`custom-site-2nd-header`}>
                 {heading}
             </p>
-            <ul className={`text-lg mt-5 px-0 space-y-4 md:space-y-3 font-semibold text-[#566bd4] list-none `}>
+            <ul className={`text-lg mt-5 px-0 space-y-4 md:space-y-3 font-semibold list-none `}>
                 {renderedLinks}
             </ul>
         </div>

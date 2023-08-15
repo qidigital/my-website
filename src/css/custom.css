@@ -376,6 +376,8 @@ body:lang(zh-Hans), html:lang(zh-Hans) {
     font-family: var(--sail-font-family-zh-Hans)
 }
 
+home-page-link
+
 a {
     color: var(--sail-color-blue-500);
     font-weight: 500;
