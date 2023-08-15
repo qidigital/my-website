@@ -112,7 +112,7 @@ const config = {
                 }
             ],
             navbar: {
-                title: '',
+                title: 'Docs',
                 logo: {
                     alt: 'Qi Digital',
                     src: 'img/qlight.png',

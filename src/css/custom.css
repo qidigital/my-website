@@ -23,355 +23,415 @@ Have any questions? Get in tough with our team.
 
 /* You can override the default Infima variables here. */
 
-@layer components {
-  .custom-footer {
-    border-top: 2px #e0e5ee solid;
-  }
-}
+
 
 :root {
-  --qi-docs-custom-font-source-sans: 'Source Sans 3', sans-serif;
-  --qi-docs-custom-font-cormorant-garamond: 'Cormorant Garamond', serif;
-  --qi-docs-standard-text-color: #8792A2;
-  --qi-docs-standard-text-link-color: #566bd4;
-  --qi-docs-standard-bg-color: rgb( 247,250,252 );
-  --qi-docs-standard-hover-color: rgb(247, 247, 250);
-  --ifm-color-primary: var(--qi-docs-standard-text-color);
-  --ifm-color-primary-dark: #b70d7c;
-  --ifm-color-primary-darker: #c40e85;
-  --ifm-color-primary-darkest: #d00e8d;
-  --ifm-color-primary-light: #d0409e;
-  --ifm-color-primary-lighter: #ce2995;
-  --ifm-color-primary-lightest: #d362ac;
-  --ifm-code-font-size: 95%;
-  --ifm-navbar-background-color: var(--qi-docs-standard-bg-color);
-  --ifm-navbar-height: 70px;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+    --qi-docs-custom-font-source-sans: 'Source Sans 3', sans-serif;
+    --qi-docs-custom-font-cormorant-garamond: 'Cormorant Garamond', serif;
+    --qi-docs-standard-text-color: #8792A2;
+    --qi-docs-standard-navbar__link: var(--qi-docs-standard-text-color);
+    --qi-docs-standard-navbar__link__hover: #393c48;
+    --qi-docs-standard-text-link-color: #566bd4;
+    --qi-docs-standard-bg-color: rgb(247, 250, 252);
+    --qi-docs-standard-hover-color: rgb(247, 247, 250);
+    --ifm-color-primary: var(--qi-docs-standard-text-color);
+    --ifm-color-primary-dark: #b70d7c;
+    --ifm-color-primary-darker: #c40e85;
+    --ifm-color-primary-darkest: #d00e8d;
+    --ifm-color-primary-light: #d0409e;
+    --ifm-color-primary-lighter: #ce2995;
+    --ifm-color-primary-lightest: #d362ac;
+    --ifm-code-font-size: 95%;
+    --ifm-navbar-background-color: var(--qi-docs-standard-bg-color);
+    --ifm-navbar-height: 70px;
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+    --ifm-color-primary: #25c2a0;
+    --ifm-color-primary-dark: #21af90;
+    --ifm-color-primary-darker: #1fa588;
+    --ifm-color-primary-darkest: #1a8870;
+    --ifm-color-primary-light: #29d5b0;
+    --ifm-color-primary-lighter: #32d8b4;
+    --ifm-color-primary-lightest: #4fddbf;
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+@layer components {
+    .custom-site-main-header {
+        @apply font-cormorant-garamond text-6xl mb-6 font-extrabold
+    }
+
+    .custom-site-2nd-header {
+        @apply font-cormorant-garamond text-4xl font-semibold text-black
+    }
+
+
 }
 
 /* sidebar */
 :root {
-  --ifm-menu-color-background-active: var(--qi-docs-standard-bg-color);
-  --ifm-menu-color-background-hover: var(--qi-docs-standard-hover-color);
+    --ifm-menu-color-background-active: var(--qi-docs-standard-bg-color);
+    --ifm-menu-color-background-hover: var(--qi-docs-standard-hover-color);
 }
 
-.menu__link {
-  font-size: medium;
+.navbar__logo {
+    padding-right: 0;
+    margin-right: 0;
 }
 
+.Arrow {
+    border-top: #9f9e9e 1.8px solid;
+}
+.navbar__title {
+    font-family: var(--qi-docs-custom-font-cormorant-garamond);
+    font-size: 40px;
+    color: black;
+}
 /* font family */
 .font-cormorant-garamond {
-  font-family: var(--qi-docs-custom-font-cormorant-garamond);
+    font-family: var(--qi-docs-custom-font-cormorant-garamond);
 }
 
 /* nav bar */
 .navbar__link {
-  color: #2c2f3b;
-  font-size: 18px;
-  letter-spacing: 2px;
-  font-weight: normal;
-  margin-right: 10px;
+    color: var(--qi-docs-standard-navbar__link);
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 10px;
 }
 
 .navbar__link:hover {
-  color: #393c48;
+    color: var(--qi-docs-standard-navbar__link__hover);
 }
 
 .font-source-sans {
-  font-family: var(--qi-docs-custom-font-source-sans);
+    font-family: var(--qi-docs-custom-font-source-sans);
 }
 
 .theme-doc-sidebar-menu li:not(:last-child) {
-  margin-bottom: 3px;
+    margin-bottom: 3px;
 }
 
 /* docItemCol */
+[class^="docsWrapper"] {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 [class^="docItemContainer"] {
-  max-width: 800px;
-  margin: 0 auto;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/*hide dark mode Icon*/
+[class^="lightToggleIcon"] {
+    display: none;
 }
 
 
 html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
 }
 
 body {
-  margin: 0
+    margin: 0
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block
+    display: block
 }
 
 audio, canvas, progress, video {
-  display: inline-block;
-  vertical-align: baseline
+    display: inline-block;
+    vertical-align: baseline
 }
 
 audio:not([controls]) {
-  display: none;
-  height: 0
+    display: none;
+    height: 0
 }
 
 [hidden], template {
-  display: none
+    display: none
 }
 
 a {
-  background-color: transparent;
+    background-color: transparent;
 }
 
 a:active, a:hover {
-  outline: 0;
-  background: transparent;
-}
-.menu__link menu__link--active {
-  background: black !important;
+    outline: 0;
+    background: transparent;
 }
 
 p {
-  color: var(--qi-docs-standard-text-color);
+    color: var(--qi-docs-standard-text-color);
 }
 
 p a {
-  color: var(--qi-docs-standard-text-link-color);
+    color: var(--qi-docs-standard-text-link-color);
 }
 
 p a:hover {
-  filter: brightness(0.85);
+    filter: brightness(0.85);
 }
 
 .theme-doc-markdown p {
-  font-size: medium;
-  font-weight: normal;
+    font-size: medium;
+    font-weight: normal;
 }
 
 abbr[title] {
-  border-bottom: 1px dotted
+    border-bottom: 1px dotted
 }
 
 b, strong {
-  font-weight: bold
+    font-weight: bold
 }
 
 dfn {
-  font-style: italic
+    font-style: italic
 }
 
 h1 {
-  font-size: 2em;
-  margin: .67em 0
+    font-size: 2em;
+    margin: .67em 0
 }
 
 mark {
-  background: #ff0;
-  color: #000
+    background: #ff0;
+    color: #000
 }
 
 small {
-  font-size: 80%
+    font-size: 80%
 }
 
 sub, sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
 }
 
 sup {
-  top: -0.5em
+    top: -0.5em
 }
 
 sub {
-  bottom: -0.25em
+    bottom: -0.25em
 }
 
 img {
-  border: 0
+    border: 0
 }
 
 svg:not(:root) {
-  overflow: hidden
+    overflow: hidden
 }
 
 figure {
-  margin: 1em 40px
+    margin: 1em 40px
 }
 
 hr {
-  box-sizing: content-box;
-  height: 0
+    box-sizing: content-box;
+    height: 0
 }
 
 pre {
-  overflow: auto
+    overflow: auto
 }
 
 code, kbd, pre, samp {
-  font-family: monospace, monospace;
-  font-size: 1em
+    font-family: monospace, monospace;
+    font-size: 1em
 }
 
 button, input, optgroup, select, textarea {
-  color: inherit;
-  font: inherit;
-  margin: 0
+    color: inherit;
+    font: inherit;
+    margin: 0
 }
 
 button {
-  overflow: visible
+    overflow: visible
 }
 
 button, select {
-  text-transform: none
+    text-transform: none
 }
 
 button, html input[type=button], input[type=reset], input[type=submit] {
-  -webkit-appearance: button;
-  cursor: pointer
+    -webkit-appearance: button;
+    cursor: pointer
 }
 
 button[disabled], html input[disabled] {
-  cursor: default
+    cursor: default
 }
 
 button::-moz-focus-inner, input::-moz-focus-inner {
-  border: 0;
-  padding: 0
+    border: 0;
+    padding: 0
 }
 
 input {
-  line-height: normal
+    line-height: normal
 }
 
 input[type=checkbox], input[type=radio] {
-  box-sizing: border-box;
-  padding: 0
+    box-sizing: border-box;
+    padding: 0
 }
 
 input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
-  height: auto
+    height: auto
 }
 
 input[type=search] {
-  -webkit-appearance: textfield;
-  box-sizing: content-box
+    -webkit-appearance: textfield;
+    box-sizing: content-box
 }
 
 input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
-  -webkit-appearance: none
+    -webkit-appearance: none
 }
 
 fieldset {
-  border: 1px solid silver;
-  margin: 0 2px;
-  padding: .35em .625em .75em
+    border: 1px solid silver;
+    margin: 0 2px;
+    padding: .35em .625em .75em
 }
 
 legend {
-  border: 0;
-  padding: 0
+    border: 0;
+    padding: 0
 }
 
 textarea {
-  overflow: auto
+    overflow: auto
 }
 
 optgroup {
-  font-weight: bold
+    font-weight: bold
 }
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0
+    border-collapse: collapse;
+    border-spacing: 0
 }
 
 td, th {
-  padding: 0
+    padding: 0
 }
 
 * {
-  box-sizing: border-box;
-  word-wrap: break-word
+    box-sizing: border-box;
+    word-wrap: break-word
 }
 
 body, html {
-  color: var(--sail-color-text);
-  font-weight: 400;
-  font-size: 14px;
-  font-family: var(--qi-docs-custom-font-source-sans)
+    color: var(--sail-color-text);
+    font-weight: 400;
+    font-size: 14px;
+    font-family: var(--qi-docs-custom-font-source-sans)
 }
 
 code, kbd, pre, samp {
-  font-size: 13px;
-  font-family: var(--sail-font-family-monospace)
+    font-size: 13px;
+    font-family: var(--sail-font-family-monospace)
 }
 
 code {
-  color: inherit
+    color: inherit
 }
 
 code:lang(ja-JP), kbd:lang(ja-JP), pre:lang(ja-JP), samp:lang(ja-JP) {
-  font-family: var(--sail-font-family-monospace-ja-JP)
+    font-family: var(--sail-font-family-monospace-ja-JP)
 }
 
 code:lang(zh-Hans), kbd:lang(zh-Hans), pre:lang(zh-Hans), samp:lang(zh-Hans) {
-  font-family: var(--sail-font-family-monospace-zh-Hans)
+    font-family: var(--sail-font-family-monospace-zh-Hans)
 }
 
 body, button, html, input {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
 }
 
 body:lang(ja-JP), html:lang(ja-JP) {
-  font-family: var(--sail-font-family-ja-JP)
+    font-family: var(--sail-font-family-ja-JP)
 }
 
 body:lang(zh-Hans), html:lang(zh-Hans) {
-  font-family: var(--sail-font-family-zh-Hans)
+    font-family: var(--sail-font-family-zh-Hans)
 }
 
 a {
-  color: var(--sail-color-blue-500);
-  font-weight: 500;
-  text-decoration: none
+    color: var(--sail-color-blue-500);
+    font-weight: 500;
+    text-decoration: none
 }
 
 a:hover {
-  color: var(--sail-color-gray-900);
-  text-decoration: none
+    color: var(--sail-color-gray-900);
+    text-decoration: none
 }
 
 b, strong {
-  font-weight: 500
+    font-weight: 500
 }
 
 em, i {
-  font-style: italic
+    font-style: italic
 }
 
-/* navbar */
-.navbar__inner {
-  width: 100%;
-  max-width: 1480px;
-  margin: 0 auto;
+.navbar__inner, .custom-site-wrapper {
+    width: 100%;
+    max-width: 1480px;
+    margin: 0 auto;
+}
+
+.main-wrapper {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.custom-footer {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/*sm*/
+@media (min-width: 640px) {
+    .navbar__inner, .custom-site-wrapper {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+/*md*/
+@media (min-width: 768px) {
+    .navbar__inner, .custom-site-wrapper {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+/*lg*/
+@media (min-width: 1024px) {
+    .navbar__inner, .custom-site-wrapper {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
 }
 
 

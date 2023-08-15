@@ -4,9 +4,9 @@ const arrow_head =
 
 const Arrow = ({width='50px'}) => {
     return (
-        <div className={`w-full max-w-[60px] mt-3 `}>
-            <div className={`relative border border-amber-600  border-l-0 border-r-0 border-b-0 max-w-[${width}]`}>
-                <img src={arrow_head} className="h-4 absolute right-0 -top-2"/>
+        <div className={`w-full max-w-[60px] mt-5`}>
+            <div className={`relative Arrow  border border-t-black  border-l-0 border-r-0 border-b-0 max-w-[200px]`}>
+                <img src={arrow_head} className="h-5 absolute right-0 -top-[9.7px]"/>
             </div>
         </div>
     );
