@@ -76,12 +76,12 @@ const HomePageHero = () => {
         <div className={`w-full `}>
             <div className="custom-site-wrapper">
                 <div className={`flex items-center justify-center h-[400px]`}>
-                    <div className={`w-full`}>
-                        <h1 className={`text-6xl font-medium font-cormorant-garamond`}>Documentation</h1>
+                    <div className={`w-full `}>
+                        <h1 className={`text-6xl font-medium font-cormorant-garamond mt-0`}>Documentation</h1>
                         <p className={`text-3xl font-n max-w-[500px] pb-6`}>Find examples, integration guides and other
                             ways of working with Qi.</p>
                         <div className={`text-black font-bold text--italic font-cormorant-garamond text-2xl`}>
-                             <ArrowButton textClass={`text-black text-2xl`} linkText={`explore docs`} link={`#`}/>
+                             <ArrowButton textClass={`text-black text-3xl`} linkText={`explore docs`} link={`#`}/>
                         </div>
                     </div>
                 </div>

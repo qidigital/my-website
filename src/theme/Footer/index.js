@@ -13,9 +13,9 @@ function Footer() {
     const {copyright, links, logo, style} = footer;
     return (
         <div className={`w-full`}>
-            <div className="custom-site-wrapper custom-footer items-top justify-between items-center pt-10 md:flex md:h-[100px]">
-                <p className={`font-semibold text-lg `}>@ 2023 Qi DIgital</p>
-                <p className={`font-semibold text-lg`}>Need additional support? <a className={`font-semibold`}
+            <div className="custom-site-wrapper custom-footer text-xl justify-between md:items-center items-top py-3 pt-10 md:flex md:h-[100px]">
+                <p className={`font-semibold  `}>@ 2023 Qi DIgital</p>
+                <p className={`font-semibold `}>Need additional support? <a className={`font-semibold`}
                                                                                    href='mailto:connect@qidigital.com'>connect@qidigital.com</a>
                 </p>
             </div>

@@ -29,6 +29,7 @@ Have any questions? Get in tough with our team.
     --qi-docs-custom-font-source-sans: 'Source Sans 3', sans-serif;
     --qi-docs-custom-font-cormorant-garamond: 'Cormorant Garamond', serif;
     --qi-docs-standard-text-color: #8792A2;
+    --qi-docs-standard-footer-border-color: var(--qi-docs-standard-text-color);
     --qi-docs-standard-navbar__link: var(--qi-docs-standard-text-color);
     --qi-docs-standard-navbar__link__hover: #393c48;
     --qi-docs-standard-text-link-color: #566bd4;
@@ -414,8 +415,14 @@ em, i {
 }
 
 .custom-footer {
+    border-top: var(--qi-docs-standard-footer-border-color) 1px solid;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+}
+
+ .menu__link{
+    margin-top: 1rem;
+     font-size: 18px;
 }
 
 /*sm*/

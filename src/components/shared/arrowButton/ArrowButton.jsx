@@ -7,8 +7,8 @@ const ArrowButton = ({linkText = null, link = '#', textClass = 'text-black'}) =>
         return null;
     } else {
         return (
-            <div className="flex max-w-[250px]">
-                <div className={`text-2xl w-1/2`}>
+            <div className="flex justify-start max-w-[350px]">
+                <div className={`text-2xl w-auto pr-2`}>
                     <Link to={link} className={textClass}>{linkText}</Link>
                 </div>
                 <Arrow/>
